@@ -5,4 +5,4 @@
 
 lst_materias = ['Matemáticas', 'Física', 'Química', 'Historia', 'Lengua']
 for materia in lst_materias:
-    print(materia, end=" "), ("Yo estudio {}".format(materia))
+    print(materia, end="    Yo estudio {}\n".format(materia))

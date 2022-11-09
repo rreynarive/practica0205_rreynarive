@@ -5,3 +5,11 @@
 # Al final el programa debe mostrar por pantalla las asignaturas que
 # el usuario tiene que repetir.
 lst_materias = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
+aprobado = []
+for materia in lst_materias:
+    nota = float(input("¿Que nota has sacado en {}? ".format(materia)))
+    if nota >= 5:
+        aprobado.append(materia)
+for materia in aprobado:
+    lst_materias.remove(materia)
+print("Tienes que repetir {}".format(str(lst_materias)))
